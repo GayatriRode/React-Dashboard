@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  top: 8%;
+  overflow-x: hidden;
+  background-color: lightgray;
+  padding: 4%;
+}
+
+.dashboard-header {
+  font-size: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.dashboard-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px lightblue;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+}
+
+.sidebar-sticky {
+  top: 5%;
+  position: fixed;
+  background-color: #126180;
+  color: white;
+  height: 100vh;
+  width: 262px;
+  }
+
+.navbar1 {
+  overflow-x: hidden;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    padding: 4%;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .sidebar-sticky .img1{
+    text-align: left;
+  }
+
+  .dashboard-header{
+    top: 8%;
+    position: relative;
+  }
+}
+
+.charts{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.chart-container {
+  background-color: white;
+  padding: 4%;
+  margin-top: 35px;
+  border-radius: 2%;
+}
+
+.exam-schedule{
+  background-color: white;
+  padding: 4%;
+  margin-top: 35px;
+}
+
+.day{
+  background-color: lightblue;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.prof-list, .studentList{
+  top: 6%;
+  position: relative;
+  padding: 2%;
+}
+
+.list{
+  padding: 2%;
+  margin-top: 25px;
+  background-color: white;
+  border: 1px;
+}
